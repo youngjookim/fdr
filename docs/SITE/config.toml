@@ -1,4 +1,4 @@
-baseurl = "https://youngjookim.github.io/fdr/docs/"
+baseurl = "https://youngjookim.github.io/fdr/docs/SITE/"
 title = "console-demo"
 theme = "hugo-theme-console"
 languageCode = "en-us"
