@@ -1,9 +1,11 @@
-baseurl = "https://youngjookim.github.io/fdr/docs/SITE/"
-title = "console-demo"
+baseurl = "https://youngjookim.github.io/fdr/"
+title = "TEST"
 theme = "hugo-theme-console"
 languageCode = "en-us"
 
 publishDir = "../"
+relativeURLs = true
+canonifyurls = true
 
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
@@ -11,12 +13,12 @@ publishDir = "../"
 
   [[params.navlinks]]
   name = "about/"
-  url = "about/"
+  url = "/docs/about/"
 
   [[params.navlinks]]
   name = "posts/"
-  url = "posts/"
+  url = "/docs/posts/"
   
   [[params.navlinks]]
   name = "photos/"
-  url = "photos/"
+  url = "/docs/photos/"
