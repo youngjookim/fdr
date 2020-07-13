@@ -4,13 +4,6 @@
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/photos/</loc>
-            <lastmod>2020-02-09T00:00:00+00:00</lastmod>
-        </url>
-        
-    
-        
-        <url>
             <loc>https://youngjookim.github.io/fdr/</loc>
             <lastmod>2020-02-09T00:00:00+00:00</lastmod>
         </url>
@@ -18,63 +11,70 @@
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/photos/warsaw-poland/</loc>
+            <loc>https://youngjookim.github.io/fdr/results/</loc>
             <lastmod>2020-02-09T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/photos/hel-poland-3/</loc>
+            <loc>https://youngjookim.github.io/fdr/results/warsaw-poland/</loc>
+            <lastmod>2020-02-09T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>https://youngjookim.github.io/fdr/results/hel-poland-3/</loc>
             <lastmod>2020-02-06T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/photos/hel-poland-2/</loc>
+            <loc>https://youngjookim.github.io/fdr/results/hel-poland-2/</loc>
             <lastmod>2020-01-23T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/photos/arizona-us/</loc>
+            <loc>https://youngjookim.github.io/fdr/results/arizona-us/</loc>
             <lastmod>2020-01-21T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/photos/chicago-us/</loc>
+            <loc>https://youngjookim.github.io/fdr/results/chicago-us/</loc>
             <lastmod>2020-01-21T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/photos/panaji-india-2/</loc>
+            <loc>https://youngjookim.github.io/fdr/results/panaji-india-2/</loc>
             <lastmod>2020-01-07T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/posts/what-is-hugo/</loc>
+            <loc>https://youngjookim.github.io/fdr/experiments/</loc>
             <lastmod>2019-08-03T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/posts/</loc>
+            <loc>https://youngjookim.github.io/fdr/experiments/what-is-hugo/</loc>
             <lastmod>2019-08-03T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>https://youngjookim.github.io/fdr/posts/introduction/</loc>
+            <loc>https://youngjookim.github.io/fdr/experiments/introduction/</loc>
             <lastmod>2019-07-01T00:00:00+00:00</lastmod>
         </url>
         
