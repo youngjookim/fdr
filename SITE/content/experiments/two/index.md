@@ -1,11 +1,12 @@
 +++
-title = "Introduction"
-date = "2019-08-03"
+title = "Post 1"
+date = "2020-01-02"
 +++
 
-Hugo is an open-source project and lives by the work of its contributors. There are plenty of open issues, and we need your help to make Hugo even more awesome. You don't need to be a Go guru to contribute to the project's development.
+Blablabla
 
-<!--more-->
+<!--
+Hugo is an open-source project and lives by the work of its contributors. There are plenty of open issues, and we need your help to make Hugo even more awesome. You don't need to be a Go guru to contribute to the project's development.
 
 ## Assumptions
 
@@ -43,3 +44,4 @@ You can print the `GOPATH` with `echo $GOPATH`. You should see a non-empty strin
 ```
 /Users/<yourusername>/Code/go
 ```
+-->

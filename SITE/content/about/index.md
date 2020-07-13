@@ -8,7 +8,7 @@ Filtered dimensionality reduction (FDR) sharpens the original data before dimens
 ![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
 
 ## Code
-The code is written in C++.
+Code is written in C++.
 ```
 $ git clone https://github.com/youngjookim/fdr.git
 ```

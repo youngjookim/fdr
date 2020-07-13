@@ -13,12 +13,12 @@ canonifyurls = true
 
   [[params.navlinks]]
   name = "about/"
-  url = "/about/"
+  url = "about/"
 
   [[params.navlinks]]
   name = "experiments/"
-  url = "/experiments/"
+  url = "experiments/"
   
   [[params.navlinks]]
   name = "results/"
-  url = "/results/"
+  url = "results/"
