@@ -13,7 +13,7 @@ Code is written in C++ and is available [here](https://github.com/youngjookim/fd
 https://github.com/youngjookim/fdr
 ```
 \
-The filter is implemented in function THIS in main.cpp.
+The filter is implemented in function 'filter_for_dr' in main.cpp.
 
 To get the code running please include the following:\
 a. [Nanoflann](https://github.com/jlblancoc/nanoflann) header file\
