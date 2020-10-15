@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Filtered Dimensionality Reduction</title>
-    <link>https://youngjookim.github.io/fdr/</link>
-    <description>Recent content on Filtered Dimensionality Reduction</description>
+    <title>Results on Filtered Dimensionality Reduction</title>
+    <link>https://youngjookim.github.io/fdr/results/</link>
+    <description>Recent content in Results on Filtered Dimensionality Reduction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://youngjookim.github.io/fdr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://youngjookim.github.io/fdr/results/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -85,16 +85,6 @@
     </item>
     
     <item>
-      <title>Post 1</title>
-      <link>https://youngjookim.github.io/fdr/experiments/two/</link>
-      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/fdr/experiments/two/</guid>
-      <description>Blablabla
-  </description>
-    </item>
-    
-    <item>
       <title>Pre-DR with PCA using HAR data set</title>
       <link>https://youngjookim.github.io/fdr/results/11/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
@@ -113,39 +103,12 @@
     </item>
     
     <item>
-      <title>Post 2</title>
-      <link>https://youngjookim.github.io/fdr/experiments/one/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/fdr/experiments/one/</guid>
-      <description>Blablabla
-  </description>
-    </item>
-    
-    <item>
       <title>Results where smaller learning rates are used for FDRs that gave poor results in the previous experiment</title>
       <link>https://youngjookim.github.io/fdr/results/13/</link>
       <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/fdr/results/13/</guid>
       <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://youngjookim.github.io/fdr/about/</link>
-      <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
-      
-      <guid>https://youngjookim.github.io/fdr/about/</guid>
-      <description>Filtered dimensionality reduction (FDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
-Code Code is written in C++ and is available here.
-https://github.com/youngjookim/fdr
-The filter is implemented in function &amp;lsquo;filter_for_dr&amp;rsquo; in main.cpp.
-To get the code running please include the following:
-a. Nanoflann header file
-b. Eigen 3.3.3
-c. Tapkee dimension reduction library
-  </description>
     </item>
     
     <item>
