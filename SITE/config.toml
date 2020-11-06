@@ -1,5 +1,5 @@
 baseurl = "https://youngjookim.github.io/fdr/"
-title = "Filtered Dimensionality Reduction"
+title = "High-Dimensional Sharpened Dimensionality Reduction"
 theme = "hugo-theme-console"
 languageCode = "en-us"
 
