@@ -1,4 +1,6 @@
 +++
 title = "Experiments"
-type="gallery"
+type = "gallery"
 +++
+
+

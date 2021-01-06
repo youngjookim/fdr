@@ -6,28 +6,30 @@ Youngjoo Kim, Alexandru C. Telea, Scott C. Trager, Jos B. T. M. Roerdink
 <h1>About</h1>
 
 <p>
-Filtered dimensionality reduction (FDR) sharpens the original data before reducing the dimensions to create visually segregrated sample clusters, which is targeted for user-guided labeling.  <a href="about/">(more)</a>
+High-dimensional sharpened dimensionality reduction (HD-SDR) sharpens the original high-dimensional data before reducing the dimensions to create visually segregrated sample clusters, which is targeted for user-guided labeling.  <a href="about/">(more)</a>
 </p>
 <br/>
 
 <h1>Experiments</h1>
 
-<div class="posts-list">
+<div class="image-grid">
 {{ with .Site.GetPage "/experiments" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-        <div class="post">
-            <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-            {{ .Summary }}
-        </div>    
+    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
+        <a href="{{ .Permalink }}" title="{{ .Title }}">
+        {{ $image := .Page.Resources.GetMatch .Params.image }}
+        {{ with $image }}
+            {{ $thumb := .Resize "400x" }}
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+        {{end}}
+        </a>
     {{ end }}
 {{ end }}
 </div>
 
-<h1>All Results</h1>
+<h1>Supplemental Materials</h1>
 
 <div class="image-grid">
-{{ with .Site.GetPage "/results" }}
+{{ with .Site.GetPage "/supplemental_materials" }}
     {{ range first 3 (sort .Data.Pages "Date" "desc")}}
         <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ $image := .Page.Resources.GetMatch .Params.image }}

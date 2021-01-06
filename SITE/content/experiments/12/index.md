@@ -1,8 +1,8 @@
 +++
 image = "12.png"
-date = "2020-01-01"
-title = "DR vs. FDR for WiFi data set (All DR methods)"
+date = "2021-01-12"
+title = "Pre-DR with PCA using HAR data set"
 type = "gallery"
 +++
 
-Explanation
+Proportion of total variance explained by each component when using PCA on Human Activity Recognition (HAR) data. The original data set contains 561 dimensions but can be reduced to 10 dimensions when selecting 80 percent of the variance.

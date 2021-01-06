@@ -16,9 +16,9 @@ canonifyurls = true
   url = "about/"
   
   [[params.navlinks]]
-  name = "results/"
-  url = "results/"
-
-  [[params.navlinks]]
   name = "experiments/"
   url = "experiments/"
+
+  [[params.navlinks]]
+  name = "supplemental_materials/"
+  url = "supplemental_materials/"
