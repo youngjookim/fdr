@@ -4,10 +4,10 @@
 {{ .Content }}
 
 <div class="posts-list">
-{{ range sort .Data.Pages "Date" "desc" }}
+{{ range sort .Data.Pages "Date" "asc" }}
     {{ if not .Params.private }}
         <div class="post">
-            <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
+            <div class="date">{{ .PublishDate.Format "Jan. 1, 2021" }}</div>    
             <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
             {{ .Summary }}
         </div>
