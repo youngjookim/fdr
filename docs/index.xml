@@ -6,251 +6,110 @@
     <description>Recent content on High-Dimensional Sharpened Dimensionality Reduction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://youngjookim.github.io/sdr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youngjookim.github.io/sdr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comparison of neighborhood hit (Qh) for sharpened data and original data of the five different types of synthetic data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/6/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/6/</guid>
+      <description>Comparison of neighborhood hit (Qh) for sharpened data and original data of the five different types of synthetic data used in Figure 3. For all synthetic data sets, Qh is always higher for the sharpened data as compared with the original data. We also note that Qh for sharpened data is higher when clusters are more separated (α=0.04 compared with α=0.01).</description>
+    </item>
+    
+    <item>
+      <title>Results of four neighborhood-based quality metrics for Banknote data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/5/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/5/</guid>
+      <description>Results of four neighborhood-based quality metrics for Banknote data: Neighborhood hit (Qh), Trustworthiness (Qt), Continuity (Qc), and Jaccard set distance (Qj). Note that Qhis consistent with results from Figure 3 and best represents the visual cluster separation, whereas Qt, Qc, and Qjsuggest the opposite. Note that Qt, Qc, and Qjdo not consider class label information. More results including Qt, Qc, and Qjfor the five synthetic data sets can be found in the supplemental materials.</description>
+    </item>
+    
+    <item>
+      <title>DR vs. HD-SDR for real-world data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/4/</link>
+      <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/4/</guid>
+      <description>Comparison of DR and HD-SDR using four different real-world data. DR methods are ordered from left to right based on how well clusters are separated. The samples are colored by their ground-truth labels for visual examination purposes. Note that the sharpening method significantly enhances the visual separability of clusters for the first three data sets, except for SUMAP as shown in the sixth column. Additionally, St-SNE and SUMAP exhibit more oversegmentation of clusters than SRP and SLMDS.</description>
+    </item>
+    
+    <item>
+      <title>DR vs. HD-SDR for synthetic data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/3/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/3/</guid>
+      <description>Comparison of DR and HD-SDR using five different types of synthetic data. DR methods are ordered from left to right based on how well clusters are separated. The samples are colored by the ground-truth labels of five different clusters for visual examination purposes. The results for SRP and SLMDS have been obtained with α and for St-SNE (perplexity=50) and SUMAP with α=0.01. Note that our sharpening method enhances the separation of clusters for DR methods with less ability to separate clusters (i.</description>
+    </item>
+    
+    <item>
+      <title>Effect of different hyperparameters using non-Gaussian synthetic data - Lognormal</title>
+      <link>https://youngjookim.github.io/sdr/experiments/2/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/2/</guid>
+      <description>Effects of different parameters using 2D non-Gaussian (log-normal, μ=0, and σ=1) data with 10K observations. Note that the effects of the parameters are similar to those of Figure 1. However, LGC with too large values of T and α is prone to outliers (long tails), as shown in (d) and (l), but this problem can be solved by setting a larger value of k.</description>
+    </item>
+    
+    <item>
+      <title>About </title>
+      <link>https://youngjookim.github.io/sdr/about/</link>
+      <pubDate>Fri, 01 Jan 2021 21:05:33 +0530</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/about/</guid>
+      <description>High-dimensional Sharpened Dimensionality Reduction (HD-SDR) High-dimensional Sharpened Dimensionality Reduction (HD-SDR) sharpens the original high-dimensional data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
+Table of contents  Setup Experimental results Supplemental materials  Setup Code is written in C++ and is available here.
+https://github.com/youngjookim/sdr
+To get the code running please include the following:
+a. Nanoflann header file
+b. Eigen 3.3.3
+c. Tapkee dimension reduction library</description>
+    </item>
+    
     <item>
       <title>Effect of different hyperparameters using Gaussian synthetic data</title>
       <link>https://youngjookim.github.io/sdr/experiments/1/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/1/</guid>
-      <description>Explanation
-  </description>
+      <description>Effects of parameters used in LGC. 2D Gaussian data with 10K observations and three clusters (a) are used to show the effects of the number of iterations (T) as shown in (a)&amp;ndash;(d), number of nearest neighbors (k) in (e)&amp;ndash;(l), and learning rate (α) in (m)&amp;ndash;(p). Points are color-coded based on their ground-truth labels. The cluster borders become fuzzy when using a too high T, as shown in (d). k and α both contribute to the degree of segmentation of the clusters; without choosing an appropriate α, k may not significantly affect the segmentation, as shown in rows (e)&amp;ndash;(h) and (i)&amp;ndash;(l).</description>
     </item>
     
     <item>
-      <title>Effect of different hyperparameters using Gaussian synthetic data</title>
-      <link>https://youngjookim.github.io/sdr/results/1/</link>
-      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/1/</guid>
-      <description>Explanation
-  </description>
-    </item>
-    
-    <item>
-      <title>Effect of different hyperparameters using non-Gaussian synthetic data - Lognormal</title>
-      <link>https://youngjookim.github.io/sdr/experiments/2/</link>
-      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/2/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Effect of different hyperparameters using non-Gaussian synthetic data - Lognormal</title>
-      <link>https://youngjookim.github.io/sdr/results/2/</link>
-      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/2/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>DR vs. FDR for synthetic data</title>
-      <link>https://youngjookim.github.io/sdr/experiments/3/</link>
-      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/3/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>DR vs. FDR for synthetic data</title>
-      <link>https://youngjookim.github.io/sdr/results/3/</link>
-      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/3/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Neighborhood hit (QH) comparison for LMDS, t-SNE, and FLMDS using labelled real-world data sets</title>
-      <link>https://youngjookim.github.io/sdr/experiments/6/</link>
-      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/6/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Neighborhood hit (QH) comparison for LMDS, t-SNE, and FLMDS using labelled real-world data sets</title>
-      <link>https://youngjookim.github.io/sdr/results/6/</link>
-      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/6/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>QMs for five synthetic data sets</title>
-      <link>https://youngjookim.github.io/sdr/experiments/7/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/7/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>QMs for five synthetic data sets</title>
-      <link>https://youngjookim.github.io/sdr/results/7/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/7/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Neighborhood hit (Qh) for nD data</title>
-      <link>https://youngjookim.github.io/sdr/experiments/8/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/8/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Neighborhood hit (Qh) for nD data</title>
-      <link>https://youngjookim.github.io/sdr/results/8/</link>
-      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/8/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>DR vs. FDR with astronomical data</title>
-      <link>https://youngjookim.github.io/sdr/experiments/9/</link>
-      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/9/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>DR vs. FDR with astronomical data</title>
-      <link>https://youngjookim.github.io/sdr/results/9/</link>
-      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/9/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Tinsely diagrams for FDR results with astronomical data sets</title>
-      <link>https://youngjookim.github.io/sdr/experiments/10/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/10/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Tinsely diagrams for FDR results with astronomical data sets</title>
-      <link>https://youngjookim.github.io/sdr/results/10/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/10/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Pre-DR with PCA using HAR data set</title>
-      <link>https://youngjookim.github.io/sdr/experiments/11/</link>
-      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/11/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Pre-DR with PCA using HAR data set</title>
-      <link>https://youngjookim.github.io/sdr/results/11/</link>
-      <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/11/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>DR vs. FDR for WiFi data set (All DR methods)</title>
-      <link>https://youngjookim.github.io/sdr/experiments/12/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/12/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>DR vs. FDR for WiFi data set (All DR methods)</title>
-      <link>https://youngjookim.github.io/sdr/results/12/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/12/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Results where smaller learning rates are used for FDRs that gave poor results in the previous experiment</title>
-      <link>https://youngjookim.github.io/sdr/experiments/13/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/13/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>Results where smaller learning rates are used for FDRs that gave poor results in the previous experiment</title>
-      <link>https://youngjookim.github.io/sdr/results/13/</link>
-      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/results/13/</guid>
-      <description>Explanation</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://youngjookim.github.io/sdr/about/</link>
-      <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/about/</guid>
-      <description>Sharpened dimensionality reduction (SDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
-Abstract One of the largest challenges of using dimensionality reduction (DR) on large, high-dimensional data sets is to distinguish the underlying high-dimensional data clusters in a 2D projection. We address this problem by first sharpening the clusters in the data prior to the DR step using Local Gradient Clustering (LGC).</description>
-    </item>
-    
-    <item>
-      <title>DR vs. FDR for real-world data</title>
-      <link>https://youngjookim.github.io/sdr/experiments/4/</link>
+      <title>Supplemental material 1</title>
+      <link>https://youngjookim.github.io/sdr/supplemental_materials/1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://youngjookim.github.io/sdr/experiments/4/</guid>
-      <description>Explanation</description>
+      <guid>https://youngjookim.github.io/sdr/supplemental_materials/1/</guid>
+      <description>  </description>
     </item>
     
     <item>
-      <title>DR vs. FDR for real-world data</title>
-      <link>https://youngjookim.github.io/sdr/results/4/</link>
+      <title>Supplemental material 2</title>
+      <link>https://youngjookim.github.io/sdr/supplemental_materials/2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://youngjookim.github.io/sdr/results/4/</guid>
-      <description>Explanation</description>
+      <guid>https://youngjookim.github.io/sdr/supplemental_materials/2/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Results of four neighborhood-based quality metrics for Banknote data</title>
-      <link>https://youngjookim.github.io/sdr/experiments/5/</link>
+      <title>Supplemental material 3</title>
+      <link>https://youngjookim.github.io/sdr/supplemental_materials/3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://youngjookim.github.io/sdr/experiments/5/</guid>
-      <description>Explanation</description>
+      <guid>https://youngjookim.github.io/sdr/supplemental_materials/3/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Results of four neighborhood-based quality metrics for Banknote data</title>
-      <link>https://youngjookim.github.io/sdr/results/5/</link>
+      <title>Supplemental material 4</title>
+      <link>https://youngjookim.github.io/sdr/supplemental_materials/4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://youngjookim.github.io/sdr/results/5/</guid>
-      <description>Explanation</description>
+      <guid>https://youngjookim.github.io/sdr/supplemental_materials/4/</guid>
+      <description></description>
     </item>
     
   </channel>
