@@ -1,6 +1,6 @@
 +++
 image = "9.png"
-date = "2021-01-09"
+date = "2021-01-06"
 title = "DR vs. SDR with real-world astronomical data"
 type = "gallery"
 +++

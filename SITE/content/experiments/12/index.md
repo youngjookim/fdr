@@ -1,6 +1,6 @@
 +++
 image = "12.png"
-date = "2021-01-12"
+date = "2021-01-06"
 title = "Pre-DR with PCA using HAR data set"
 type = "gallery"
 +++

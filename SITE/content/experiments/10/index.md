@@ -1,6 +1,6 @@
 +++
 image = "10.png"
-date = "2021-01-10"
+date = "2021-01-06"
 title = "Tinsely diagrams for SDR results with astronomical data sets"
 type = "gallery"
 +++

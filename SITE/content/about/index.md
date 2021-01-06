@@ -3,13 +3,10 @@ date = "2021-01-01T21:05:33+05:30"
 title = "About "
 +++
 
+## All contents from https://youngjookim.github.io/sdr/ were submitted to IEEE TVCG in January.
+
 ## High-dimensional Sharpened Dimensionality Reduction (HD-SDR)
 High-dimensional Sharpened Dimensionality Reduction (HD-SDR) sharpens the original high-dimensional data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
-
-### Table of contents
-* [Setup](#setup)
-* [Experimental results](#experimental-results)
-* [Supplemental materials](#supplemental-materials)
 
 ### Setup
 Code is written in C++ and is available [here](https://github.com/youngjookim/sdr).
@@ -26,11 +23,11 @@ The sharpening filter is implemented in function 'filter_for_dr' in main.cpp.
 
 
 ### Experimental results
-All the experimental results for this project are found [here](https://youngjookim.github.io/sdr/)
+All the experimental results for this project are found [here](https://youngjookim.github.io/sdr/).
 
 
 ### Supplemental materials
-Supplemental materials are found [here](https://youngjookim.github.io/sdr/)
+Supplemental materials are found [here](https://youngjookim.github.io/sdr/).
 
 <!--
 ![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)

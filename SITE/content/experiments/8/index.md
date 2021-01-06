@@ -1,6 +1,6 @@
 +++
 image = "8.png"
-date = "2021-01-08"
+date = "2021-01-06"
 title = "Neighborhood hit for real-world data"
 type = "gallery"
 +++

@@ -25,8 +25,8 @@ The sharpening filter is implemented in function 'filter_for_dr' in main.cpp.
 
 
 ## Experimental results
-All the experimental results for this project are found [here](https://youngjookim.github.io/sdr/)
+All the experimental results for this project are found [here](https://youngjookim.github.io/sdr/experiments/)
 
 
 ## Supplemental materials
-Supplemental materials are found [here](https://youngjookim.github.io/sdr/)
+Supplemental materials are found [here](https://youngjookim.github.io/sdr/supplemental_materials/)

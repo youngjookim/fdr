@@ -8,75 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youngjookim.github.io/sdr/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Comparison of DR and HD-SDR on HAR data with dimensions pre-selected using PCA</title>
-      <link>https://youngjookim.github.io/sdr/experiments/13/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/13/</guid>
-      <description>Comparison of DR and HD-SDR on HAR data with dimensions pre-selected using PCA as in Figure 12. Note that the separation of clusters is slightly improved for HD-SDR as compared with DR (although subclusters are visually less separable). We note that nearly all samples in cluster (1) are from the lying movement, cluster (2) mostly includes samples from static postures (standing and sitting), and cluster (3) mostly includes samples from the three dynamic activities.</description>
-    </item>
-    
-    <item>
       <title>Comparison of neighborhood hit (Qh) for sharpened data and original data of the five different types of synthetic data</title>
       <link>https://youngjookim.github.io/sdr/experiments/6/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/6/</guid>
       <description>Comparison of neighborhood hit (Qh) for sharpened data and original data of the five different types of synthetic data used in Figure 3. For all synthetic data sets, Qh is always higher for the sharpened data as compared with the original data. We also note that Qh for sharpened data is higher when clusters are more separated (α=0.04 compared with α=0.01).</description>
-    </item>
-    
-    <item>
-      <title>DR vs. SDR with real-world astronomical data</title>
-      <link>https://youngjookim.github.io/sdr/experiments/9/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/9/</guid>
-      <description>We compare DR and HD-SDR (RP, LMDS, t-SNE, and UMAP) for an unlabeled astronomical data set with no ground-truth labels: GALAH DR2 (n=10K with d=10). The projections are color-coded by one of the input values, [Fe/H], so that astronomers can further analyze the data. Note that in all cases, HD-SDR shows a clearer separation of clusters compared with DR, and SLMDS, St-SNE, and SUMAP exhibit four major clusters with similar distributions of colors within each cluster, while SRP shows three major clusters with one of them having subclusters.</description>
-    </item>
-    
-    <item>
-      <title>Neighborhood hit for five synthetic data sets</title>
-      <link>https://youngjookim.github.io/sdr/experiments/7/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/7/</guid>
-      <description>Comparison of neighborhood hit (Qh) for DR and HD-SDR of the five different types of synthetic data used for Figure 3. Note that St-SNE, t-SNE, and SLMDS yield high Qh values near one for (a)&amp;ndash;(c) and (e), which suggests that the corresponding labels of the k-size neighborhoods are well-preserved for HD-SDR. However, HD-SDR for sub-clustered data produces lower Qh compared with DR, as shown in (d), and this can be seen visually in Figure 3(a)&amp;ndash;(d).</description>
-    </item>
-    
-    <item>
-      <title>Neighborhood hit for real-world data</title>
-      <link>https://youngjookim.github.io/sdr/experiments/8/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/8/</guid>
-      <description>The neighborhood hit (Qh) metric for DR and HD-SDR using labeled real-world data sets with different values of k. We note that Qh is lower for St-SNE than for t-SNE for most values of k in (b)-(d). However for LMDS, which produces a weaker separation of clusters than t-SNE, SLMDS produces a higher value of Qh compared with LMDS for all data sets.</description>
-    </item>
-    
-    <item>
-      <title>Pre-DR with PCA using HAR data set</title>
-      <link>https://youngjookim.github.io/sdr/experiments/12/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/12/</guid>
-      <description>Proportion of total variance explained by each component when using PCA on Human Activity Recognition (HAR) data. The original data set contains 561 dimensions but can be reduced to 10 dimensions when selecting 80 percent of the variance.</description>
-    </item>
-    
-    <item>
-      <title>Tinsely diagrams for SDR results with astronomical data sets</title>
-      <link>https://youngjookim.github.io/sdr/experiments/10/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/10/</guid>
-      <description>(a) SLMDS projection of the GALAH DR2 sample, where clusters are visually labeled by one of us (SCT). The labeled clusters in SLMDS help domain experts to further analyze the data as follows: (b) Tinsley diagram for the GALAH DR2 sample, showing the abundance of magnesium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars. This diagram suggests to our domain-expert (SCT) that stars in Class 1 belong to the Milky Way&amp;rsquo;s thin disk&#39;&#39;, while those in Classes 2 and 4 appear to belong to the Milky Way&#39;s metal-rich thick disk&#39;&#39; and metal-poor thick disk&#39;&#39;, respectively, and stars in Class 3 appear to belong to the Milky Way&#39;s stellar halo&#39;&#39;.</description>
-    </item>
-    
-    <item>
-      <title>Wall-clock timing of LGC</title>
-      <link>https://youngjookim.github.io/sdr/experiments/11/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://youngjookim.github.io/sdr/experiments/11/</guid>
-      <description>(a) Wall-clock timing of LGC, for different number of observations along the x-axis and varying dimensions up to 20D. (b) Wall-clock time measurement of LGC on 10K (20D) data also used in (a), using different learning rates α. We note that the wall-clock time increases with increasing α and depends heavily on the number of dimensions.</description>
     </item>
     
     <item>
@@ -121,8 +58,8 @@
       <pubDate>Fri, 01 Jan 2021 21:05:33 +0530</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/about/</guid>
-      <description>All contents from https://youngjookim.github.io/sdr/ were submitted to IEEE TVCG in January. High-dimensional Sharpened Dimensionality Reduction (HD-SDR) High-dimensional Sharpened Dimensionality Reduction (HD-SDR) sharpens the original high-dimensional data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
-Setup Code is written in C++ and is available here.
+      <description>High-dimensional Sharpened Dimensionality Reduction (HD-SDR) High-dimensional Sharpened Dimensionality Reduction (HD-SDR) sharpens the original high-dimensional data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
+Table of contents  Setup Experimental results Supplemental materials  Setup Code is written in C++ and is available here.
 https://github.com/youngjookim/sdr
 To get the code running please include the following:
 a. Nanoflann header file

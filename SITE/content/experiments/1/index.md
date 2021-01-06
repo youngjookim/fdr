@@ -1,6 +1,6 @@
 +++
 image = "1.png"
-date = "2020-01-12"
+date = "2020-01-01"
 title = "Effect of different hyperparameters using Gaussian synthetic data"
 type = "gallery"
 +++

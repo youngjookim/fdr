@@ -1,6 +1,6 @@
 +++
 image = "11.png"
-date = "2021-01-11"
+date = "2021-01-06"
 title = "Wall-clock timing of LGC"
 type = "gallery"
 +++

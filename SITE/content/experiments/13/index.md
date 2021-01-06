@@ -1,6 +1,6 @@
 +++
 image = "13.png"
-date = "2021-01-13"
+date = "2021-01-06"
 title = "Comparison of DR and HD-SDR on HAR data with dimensions pre-selected using PCA"
 type = "gallery"
 +++
