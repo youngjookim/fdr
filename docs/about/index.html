@@ -24,15 +24,8 @@
 
 
 <meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content="Filtered dimensionality reduction (FDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
-Code Code is written in C&#43;&#43; and is available here.
-https://github.com/youngjookim/fdr
-The filter is implemented in function &lsquo;filter_for_dr&rsquo; in main.cpp.
-To get the code running please include the following:
-a. Nanoflann header file
-b. Eigen 3.3.3
-c. Tapkee dimension reduction library
-  "/>
+<meta name="twitter:description" content="Sharpened dimensionality reduction (SDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
+Abstract One of the largest challenges of using dimensionality reduction (DR) on large, high-dimensional data sets is to distinguish the underlying high-dimensional data clusters in a 2D projection. We address this problem by first sharpening the clusters in the data prior to the DR step using Local Gradient Clustering (LGC)."/>
 
 </head>
 <body class="terminal">
@@ -49,9 +42,9 @@ c. Tapkee dimension reduction library
                 
                 <li><a href="https://youngjookim.github.io/sdr/about/" typeof="ListItem">about/</a></li>
                 
-                <li><a href="https://youngjookim.github.io/sdr/experiments/" typeof="ListItem">experiments/</a></li>
-                
                 <li><a href="https://youngjookim.github.io/sdr/results/" typeof="ListItem">results/</a></li>
+                
+                <li><a href="https://youngjookim.github.io/sdr/experiments/" typeof="ListItem">experiments/</a></li>
                 
             </ul>
           </nav>
@@ -61,9 +54,11 @@ c. Tapkee dimension reduction library
     <div class="container animated zoomIn fast">
         
 <h1>About</h1>
-<p>Filtered dimensionality reduction (FDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.</p>
+<p>Sharpened dimensionality reduction (SDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
+<h2 id="abstract">Abstract</h2>
+<p>One of the largest challenges of using dimensionality reduction (DR) on large, high-dimensional data sets is to distinguish the underlying high-dimensional data clusters in a 2D projection. We address this problem by first sharpening the clusters in the data prior to the DR step using Local Gradient Clustering (LGC). We then project the sharpened data by a user-selected DR method. The sharpening step helps this method to preserve cluster separation more easily in the resulting 2D projection. With our method, end-users can label each distinct cluster to further analyze an otherwise unlabeled data set. Our `High-Dimensional Sharpened DR' (HD-SDR) method, tested on both synthetic and real-world data sets, is favorable to DR methods with poor cluster separation and yields a better visual cluster separation than these DR methods with no sharpening. We show that our method achieves good quality (measured by quality metrics) and scales computationally well with large high-dimensional data. We further apply HD-SDR on a recent astronomical catalog.</p>
 <h2 id="code">Code</h2>
 <p>Code is written in C++ and is available <a href="https://github.com/youngjookim/fdr">here</a>.</p>
 <pre><code>https://github.com/youngjookim/fdr

@@ -9,6 +9,16 @@
     <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://youngjookim.github.io/sdr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Effect of different hyperparameters using Gaussian synthetic data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/1/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/1/</guid>
+      <description>Explanation
+  </description>
+    </item>
+    
+    <item>
+      <title>Effect of different hyperparameters using Gaussian synthetic data</title>
       <link>https://youngjookim.github.io/sdr/results/1/</link>
       <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -19,10 +29,28 @@
     
     <item>
       <title>Effect of different hyperparameters using non-Gaussian synthetic data - Lognormal</title>
+      <link>https://youngjookim.github.io/sdr/experiments/2/</link>
+      <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/2/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>Effect of different hyperparameters using non-Gaussian synthetic data - Lognormal</title>
       <link>https://youngjookim.github.io/sdr/results/2/</link>
       <pubDate>Sat, 11 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/results/2/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>DR vs. FDR for synthetic data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/3/</link>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/3/</guid>
       <description>Explanation</description>
     </item>
     
@@ -37,10 +65,28 @@
     
     <item>
       <title>Neighborhood hit (QH) comparison for LMDS, t-SNE, and FLMDS using labelled real-world data sets</title>
+      <link>https://youngjookim.github.io/sdr/experiments/6/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/6/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>Neighborhood hit (QH) comparison for LMDS, t-SNE, and FLMDS using labelled real-world data sets</title>
       <link>https://youngjookim.github.io/sdr/results/6/</link>
       <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/results/6/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>QMs for five synthetic data sets</title>
+      <link>https://youngjookim.github.io/sdr/experiments/7/</link>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/7/</guid>
       <description>Explanation</description>
     </item>
     
@@ -55,10 +101,28 @@
     
     <item>
       <title>Neighborhood hit (Qh) for nD data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/8/</link>
+      <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/8/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>Neighborhood hit (Qh) for nD data</title>
       <link>https://youngjookim.github.io/sdr/results/8/</link>
       <pubDate>Sun, 05 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/results/8/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>DR vs. FDR with astronomical data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/9/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/9/</guid>
       <description>Explanation</description>
     </item>
     
@@ -73,6 +137,15 @@
     
     <item>
       <title>Tinsely diagrams for FDR results with astronomical data sets</title>
+      <link>https://youngjookim.github.io/sdr/experiments/10/</link>
+      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/10/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>Tinsely diagrams for FDR results with astronomical data sets</title>
       <link>https://youngjookim.github.io/sdr/results/10/</link>
       <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -81,13 +154,12 @@
     </item>
     
     <item>
-      <title>Post 1</title>
-      <link>https://youngjookim.github.io/sdr/experiments/two/</link>
+      <title>Pre-DR with PCA using HAR data set</title>
+      <link>https://youngjookim.github.io/sdr/experiments/11/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://youngjookim.github.io/sdr/experiments/two/</guid>
-      <description>Blablabla
-  </description>
+      <guid>https://youngjookim.github.io/sdr/experiments/11/</guid>
+      <description>Explanation</description>
     </item>
     
     <item>
@@ -101,6 +173,15 @@
     
     <item>
       <title>DR vs. FDR for WiFi data set (All DR methods)</title>
+      <link>https://youngjookim.github.io/sdr/experiments/12/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/12/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>DR vs. FDR for WiFi data set (All DR methods)</title>
       <link>https://youngjookim.github.io/sdr/results/12/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
@@ -109,13 +190,12 @@
     </item>
     
     <item>
-      <title>Post 2</title>
-      <link>https://youngjookim.github.io/sdr/experiments/one/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <title>Results where smaller learning rates are used for FDRs that gave poor results in the previous experiment</title>
+      <link>https://youngjookim.github.io/sdr/experiments/13/</link>
+      <pubDate>Tue, 31 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://youngjookim.github.io/sdr/experiments/one/</guid>
-      <description>Blablabla
-  </description>
+      <guid>https://youngjookim.github.io/sdr/experiments/13/</guid>
+      <description>Explanation</description>
     </item>
     
     <item>
@@ -133,15 +213,17 @@
       <pubDate>Sat, 05 Nov 2016 21:05:33 +0530</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/about/</guid>
-      <description>Filtered dimensionality reduction (FDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
-Code Code is written in C++ and is available here.
-https://github.com/youngjookim/fdr
-The filter is implemented in function &amp;lsquo;filter_for_dr&amp;rsquo; in main.cpp.
-To get the code running please include the following:
-a. Nanoflann header file
-b. Eigen 3.3.3
-c. Tapkee dimension reduction library
-  </description>
+      <description>Sharpened dimensionality reduction (SDR) sharpens the original data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
+Abstract One of the largest challenges of using dimensionality reduction (DR) on large, high-dimensional data sets is to distinguish the underlying high-dimensional data clusters in a 2D projection. We address this problem by first sharpening the clusters in the data prior to the DR step using Local Gradient Clustering (LGC).</description>
+    </item>
+    
+    <item>
+      <title>DR vs. FDR for real-world data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/4/</guid>
+      <description>Explanation</description>
     </item>
     
     <item>
@@ -150,6 +232,15 @@ c. Tapkee dimension reduction library
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/results/4/</guid>
+      <description>Explanation</description>
+    </item>
+    
+    <item>
+      <title>Results of four neighborhood-based quality metrics for Banknote data</title>
+      <link>https://youngjookim.github.io/sdr/experiments/5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/5/</guid>
       <description>Explanation</description>
     </item>
     
