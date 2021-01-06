@@ -14,7 +14,7 @@ High-dimensional sharpened dimensionality reduction (HD-SDR) sharpens the origin
 
 <div class="image-grid">
 {{ with .Site.GetPage "/experiments" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc")}}
+    {{ range first 3 (sort .Data.Pages "Date" "asc")}}
         <a href="{{ .Permalink }}" title="{{ .Title }}">
         {{ $image := .Page.Resources.GetMatch .Params.image }}
         {{ with $image }}
