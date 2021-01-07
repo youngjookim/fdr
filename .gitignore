@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Code/.vs/LGCDR_v1/v15
+/Code/*.code-workspace
+/Code/.history/

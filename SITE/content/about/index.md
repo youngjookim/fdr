@@ -19,8 +19,9 @@ a. [Nanoflann](https://github.com/jlblancoc/nanoflann) header file\
 b. [Eigen 3.3.3](http://eigen.tuxfamily.org/)\
 c. [Tapkee dimension reduction library](http://tapkee.lisitsyn.me/)
 
-The sharpening filter is implemented in function 'filter_for_dr' in main.cpp.
+The sharpening filter is implemented in function 'sharpening_for_dr()' in main.cpp.
 
+Input files should be located in the 'Data' folder and consist of one header file and one data file for each data set. Please run 'example_data_set_1'.
 
 ### Experimental results
 All the experimental results for this project are found [here](https://youngjookim.github.io/sdr/).
