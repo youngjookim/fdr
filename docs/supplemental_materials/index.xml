@@ -5,7 +5,11 @@
     <link>https://youngjookim.github.io/sdr/supplemental_materials/</link>
     <description>Recent content in supplemental_materials on High-Dimensional Sharpened Dimensionality Reduction</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://youngjookim.github.io/sdr/supplemental_materials/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="https://youngjookim.github.io/sdr/supplemental_materials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Supplemental material 1</title>
       <link>https://youngjookim.github.io/sdr/supplemental_materials/1/</link>
