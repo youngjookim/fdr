@@ -6,7 +6,11 @@
     <description>Recent content in Experiments on High-Dimensional Sharpened Dimensionality Reduction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youngjookim.github.io/sdr/experiments/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://youngjookim.github.io/sdr/experiments/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Comparison of DR and HD-SDR on HAR data with dimensions pre-selected using PCA</title>
       <link>https://youngjookim.github.io/sdr/experiments/13/</link>
@@ -67,7 +71,7 @@
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/10/</guid>
-      <description>(a) SLMDS projection of the GALAH DR2 sample, where clusters are visually labeled by one of us (SCT). The labeled clusters in SLMDS help domain experts to further analyze the data as follows: (b) Tinsley diagram for the GALAH DR2 sample, showing the abundance of magnesium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars. This diagram suggests to our domain-expert (SCT) that stars in Class 1 belong to the Milky Way&amp;rsquo;s thin disk&#39;&#39;, while those in Classes 2 and 4 appear to belong to the Milky Way&#39;s metal-rich thick disk&#39;&#39; and metal-poor thick disk&#39;&#39;, respectively, and stars in Class 3 appear to belong to the Milky Way&#39;s stellar halo&#39;&#39;.</description>
+      <description>(a) SLMDS projection of the GALAH DR2 sample, where clusters are visually labeled by one of us (SCT). The labeled clusters in SLMDS help domain experts to further analyze the data as follows: (b) Tinsley diagram for the GALAH DR2 sample, showing the abundance of magnesium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars. This diagram suggests to our domain-expert (SCT) that stars in Class 1 belong to the Milky Way&amp;rsquo;s thin disk&#39;&#39;, while those in Classes 2 and 4 appear to belong to the Milky Way&#39;s metal-rich thick disk&amp;rsquo;&amp;rsquo; and metal-poor thick disk&#39;&#39;, respectively, and stars in Class 3 appear to belong to the Milky Way&#39;s stellar halo&amp;rsquo;&amp;rsquo;.</description>
     </item>
     
     <item>
@@ -131,7 +135,7 @@
       
       <guid>https://youngjookim.github.io/sdr/experiments/0/</guid>
       <description>All contents from https://youngjookim.github.io/sdr/ were submitted to IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS.
-(a) SLMDS projection of the GALAH DR2 sample, where clusters are visually labeled by one of us (SCT). The labeled clusters in SLMDS help domain experts to further analyze the data as follows: (b) Tinsley diagram for the GALAH DR2 sample, showing the abundance of magnesium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars.</description>
+This video was made based on the results from this figure.</description>
     </item>
     
   </channel>
