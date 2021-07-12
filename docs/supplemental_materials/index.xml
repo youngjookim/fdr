@@ -43,7 +43,34 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/supplemental_materials/4/</guid>
-      <description></description>
+      <description>Analysis of GALAH DR2 sample using St-SNE and SUMAP projections (top row), where clusters are visually labeled by one of us (SCT) and the Tinsley diagrams [77] for the GALAH DR2 sample (bottom row), showing the abundance of magnesium and Barium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars. Note that the clusters in SRP are not easily separated, thus excluded.</description>
+    </item>
+    
+    <item>
+      <title>Supplemental material 5</title>
+      <link>https://youngjookim.github.io/sdr/supplemental_materials/5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/supplemental_materials/5/</guid>
+      <description>Extended results of the Neighborhood hit (Q_h) for data sets with different k-values and signal-to-noise ratio (SNR) values ranging from 10 to 40, where Gaussian noise has been added. The graphs in the right column show the cluttered area (Q_h is approx. 1) for the graphs in the left column. Overall, note that the Q_h-values are higher for higher SNR values. Further note that the Q_h-values of SDR are always higher than those of the corresponding DR.</description>
+    </item>
+    
+    <item>
+      <title>Supplemental material 6</title>
+      <link>https://youngjookim.github.io/sdr/supplemental_materials/6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/supplemental_materials/6/</guid>
+      <description>Results of DR and SDR with varying k-values for sharpening. The synthetic data set consists of 10K randomly generated observations in 20D. Note that (a), (d), and (g) show oversegmented clusters using k=10, while (b), (e), and (h) show a single cluster using k=50 for LGC.</description>
+    </item>
+    
+    <item>
+      <title>Supplemental material 7</title>
+      <link>https://youngjookim.github.io/sdr/supplemental_materials/7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/supplemental_materials/7/</guid>
+      <description>Extended results of speed experiments in logarithmic scale using LMDS, t-SNE, and RP in Figure 11(c). (a) Wall-clock time of LMDS for different numbers of landmark ratios along the x-axis and varying dimensions up to 20D. (b)&amp;ndash;(d) Wall-clock time of LMDS, t-SNE, and RP for data sets with different numbers of dimensions (5D, 10D, 15D, and 20D) and observations ranging from 10K to 50K. The wall-clock timings are an average of 10 trials of randomly generated Gaussian data.</description>
     </item>
     
   </channel>

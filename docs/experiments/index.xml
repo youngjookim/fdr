@@ -21,6 +21,24 @@
     </item>
     
     <item>
+      <title>Comparison of DR and HD-SDR on HAR data with dimensions pre-selected using PCA</title>
+      <link>https://youngjookim.github.io/sdr/experiments/14/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/14/</guid>
+      <description>Comparison of DR and HD-SDR using 10 outliers (red crosses) and 5K random points uniformly-distributed in a 20-dimensional hypersphere centered at the origin and with different radii (R=1,2,3,4, and 5). The distances between the outliers and the origin are always 5. Note that t-SNE and UMAP and their sharpened versions fail to preserve the outliers even when the distance between the outliers and the cluster is the largest (row 1). Further note that SRP and SLMDS preserve similar or larger numbers of outliers compared with RP and LMDS, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Comparison of DR and HD-SDR on HAR data with dimensions pre-selected using PCA</title>
+      <link>https://youngjookim.github.io/sdr/experiments/15/</link>
+      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://youngjookim.github.io/sdr/experiments/15/</guid>
+      <description>Results of DR and SDR with varying k-values for sharpening. The synthetic data set consists of 10K randomly generated samples in 20D. Note that St-SNE shows oversegmented clusters using k=10, while (b) shows a single cluster as in (c) when using k=50.</description>
+    </item>
+    
+    <item>
       <title>Comparison of neighborhood hit (Qh) for sharpened data and original data of the five different types of synthetic data</title>
       <link>https://youngjookim.github.io/sdr/experiments/6/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
@@ -35,7 +53,7 @@
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/9/</guid>
-      <description>We compare DR and HD-SDR (RP, LMDS, t-SNE, and UMAP) for an unlabeled astronomical data set with no ground-truth labels: GALAH DR2 (n=10K with d=10). The projections are color-coded by one of the input values, [Fe/H], so that astronomers can further analyze the data. Note that in all cases, HD-SDR shows a clearer separation of clusters compared with DR, and SLMDS, St-SNE, and SUMAP exhibit four major clusters with similar distributions of colors within each cluster, while SRP shows three major clusters with one of them having subclusters.</description>
+      <description>We compare DR and HD-SDR (RP, LMDS, t-SNE, and UMAP) for an unlabeled astronomical data set with no ground-truth labels: GALAH DR2 (n=10K with d=10). The projections are color-coded by one of the input values, [Fe/H], so that astronomers can further analyze the data. The learning rate parameter is set to 0.17. Note that in all cases, HD-SDR shows a clearer separation of clusters compared with DR, and SLMDS, St-SNE, and SUMAP exhibit four major clusters with similar distributions of colors within each cluster, while SRP shows three major clusters with one of them having subclusters.</description>
     </item>
     
     <item>
@@ -80,7 +98,7 @@
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/11/</guid>
-      <description>(a) Wall-clock timing of LGC, for different number of observations along the x-axis and varying dimensions up to 20D. (b) Wall-clock time measurement of LGC on 10K (20D) data also used in (a), using different learning rates α. We note that the wall-clock time increases with increasing α and depends heavily on the number of dimensions.</description>
+      <description>(a) Wall-clock timing of LGC, for different number of observations along the x-axis and varying dimensions up to 20D. (b) Wall-clock time measurement of LGC on a 10K (20D) data set, using different learning rates α. (c) Wall-clock time measurements of RP, LMDS, and t-SNE applied to nD LGC data. We note that the wall-clock time of LGC increases with increasing α and depends heavily on the number of dimensions. Moreover, RP and LMDS (landmark ratio=0.</description>
     </item>
     
     <item>
@@ -98,7 +116,7 @@
       <pubDate>Mon, 04 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/4/</guid>
-      <description>Comparison of DR and HD-SDR using four different real-world data. DR methods are ordered from left to right based on how well clusters are separated. The samples are colored by their ground-truth labels for visual examination purposes. Note that the sharpening method significantly enhances the visual separability of clusters for the first three data sets, except for SUMAP as shown in the sixth column. Additionally, St-SNE and SUMAP exhibit more oversegmentation of clusters than SRP and SLMDS.</description>
+      <description>Comparison of DR and HD-SDR using four different real-world data. DR methods are ordered from left to right based on how well clusters are separated. The samples are colored by their ground-truth labels for visual examination purposes. Note that the sharpening method significantly enhances the visual separability of clusters for the first three data sets, except for SUMAP as shown in the eighth column. Additionally, St-SNE and SUMAP exhibit more oversegmentation of clusters than SRP and SLMDS.</description>
     </item>
     
     <item>
@@ -107,7 +125,7 @@
       <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/3/</guid>
-      <description>Comparison of DR and HD-SDR using five different types of synthetic data. DR methods are ordered from left to right based on how well clusters are separated. The samples are colored by the ground-truth labels of five different clusters for visual examination purposes. The results for SRP and SLMDS have been obtained with α and for St-SNE (perplexity=50) and SUMAP with α=0.01. Note that our sharpening method enhances the separation of clusters for DR methods with less ability to separate clusters (i.</description>
+      <description>Comparison of DR and HD-SDR using five different types of synthetic data. DR methods are ordered from left to right based on how well clusters are separated. The samples are colored by the ground-truth labels of five different clusters for visual examination purposes. The results for SRP and SLMDS have been obtained with α=0.04 and for St-SNE (perplexity=50) and SUMAP with α=0.01. Note that our sharpening method enhances the separation of clusters for DR methods with less ability to separate clusters (i.</description>
     </item>
     
     <item>
@@ -135,7 +153,8 @@
       
       <guid>https://youngjookim.github.io/sdr/experiments/0/</guid>
       <description>All contents from https://youngjookim.github.io/sdr/ were submitted to IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS.
-This video was made based on the results from this figure.</description>
+This video was made based on the results from this figure.
+Top-left plot shows the SLMDS projection of the GALAH DR2 sample, where clusters are visually labeled by one of us (SCT). The labeled clusters in SLMDS help domain experts to further analyze the data as follows. The bottom-left plot shows the Tinsley diagram for the GALAH DR2 sample, showing the abundance of magnesium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars.</description>
     </item>
     
   </channel>
