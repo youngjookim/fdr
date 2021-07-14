@@ -23,6 +23,13 @@ c. [Tapkee dimension reduction library](http://tapkee.lisitsyn.me/)
 
 The sharpening filter is implemented in function 'filter_for_dr' in main.cpp.
 
+### Build SDR on Linux
+
+```
+cd Code/LGCDR_v1/
+mkdir build && cd build
+cmake ..
+```
 
 ## Experimental results
 All the experimental results for this project are found [here](https://youngjookim.github.io/sdr/experiments/)
