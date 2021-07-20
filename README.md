@@ -18,7 +18,7 @@ https://github.com/youngjookim/sdr
 \
 To get the code running please include the following:\
 a. [Nanoflann](https://github.com/jlblancoc/nanoflann) header file\
-b. [Eigen 3.3.9](http://eigen.tuxfamily.org/) cmake required\
+b. [Eigen 3.3.3 or above](http://eigen.tuxfamily.org/) cmake required\
 c. [Tapkee dimension reduction library](http://tapkee.lisitsyn.me/)
 
 The sharpening filter is implemented in function 'filter_for_dr' in main.cpp.
