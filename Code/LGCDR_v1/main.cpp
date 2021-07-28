@@ -33,6 +33,7 @@ const int SDR_MODE = 2;
 unsigned int TAPKEE_NUM_DR = 0;
 unsigned int NUM_ITR = 0;
 double LEARNING_RATE = 0.1;
+double LANDMARK_RATIO = 0.1;
 
 void print_usage(){
 	std::cerr  << "Usage: sdr <mode> <TAPKEE_NUM_DR> <NUM_ITR> <LEARNING_RATE> <path>\n";
@@ -81,7 +82,7 @@ int main(int argc, char *argv[])
 	int idx3 = 0;
 
 	double max1 = 0, min1 = 0;
-	double t = 0;
+	//double t = 0;
 	double* data = 0;		//input data
 	int obs = 0, dim = 0;	//{obs, dim}
 	int idx1 = 0, idx2 = 0;
@@ -97,51 +98,70 @@ int main(int argc, char *argv[])
 	std::string fullpath;
 	std::string cur_path;
 
-	for (auto & p_par : std::filesystem::directory_iterator(path.c_str())) //Run for different data sets in each directory
+	ofstream in_file;
+	cur_path = path;//p_par.path().string().c_str();//Read header
+	//std::cout << cur_path << endl;
+	cur_path += "/";
+	fullpath = cur_path + file_str_info;
+	//std::cout << fullpath << endl;
+	in_file.open(fullpath);
+	in_file << "Learning rate: " << LEARNING_RATE << endl;
+	in_file << "Tapkee DR used: " << TAPKEE_NUM_DR << endl;
+	if (in_file.fail())
 	{
-		ofstream in_file;
-		cur_path = p_par.path().string().c_str();//Read header
-		cur_path += "/";
-		fullpath = cur_path + file_str_info;
-		in_file.open(fullpath);
-		in_file << "Learning rate: " << LEARNING_RATE << endl;
-		in_file << "Tapkee DR used: " << TAPKEE_NUM_DR << endl;
-		if (in_file.fail())
+		cerr << "    (ERROR) main(): Failed to open log file" << endl;
+		return 0;
+	}
+	//std::cout << "- DIR: " << path.c_str() << endl;//p_par.path().string().c_str() << endl;
+	fullpath = cur_path + file_str_header;
+	read_obs_dim(&obs, &dim, fullpath.c_str());	//read header
+	if(obs>0 && dim>1)
+		data = new double[obs * dim];
+	fullpath = cur_path + file_str_original_data;
+	read_file(data, fullpath.c_str()); //read data and copy it to destination memory
+	tapkee::DenseMatrix data_mat(obs, dim);
+
+	for (idx1 = 0; idx1 < dim; idx1++)//Normalize between 0 and 1
+	{
+		max1 = data[idx1];
+		min1 = data[idx1];
+		for (idx2 = 1; idx2 < obs; idx2++)
 		{
-			cerr << "    (ERROR) main(): Failed to open log file" << endl;
-			return 0;
+			max1 = max(data[idx2*dim + idx1], max1);
+			min1 = min(data[idx2*dim + idx1], min1);
 		}
-		std::cout << "- DIR: " << p_par.path().string().c_str() << endl;
-		fullpath = cur_path + file_str_header;
-		read_obs_dim(&obs, &dim, fullpath.c_str());	//read header
-		if(obs>0 && dim>1)
-			data = new double[obs * dim];
-		fullpath = cur_path + file_str_original_data;
-		read_file(data, fullpath.c_str()); //read data and copy it to destination memory
-		tapkee::DenseMatrix data_mat(obs, dim);
+		for (idx2 = 0; idx2 < obs; idx2++)
+			data[idx2*dim + idx1] = ((data[idx2*dim + idx1] - min1) / (max1 - min1));
+	}
+	in_file << endl;
 
-		for (idx1 = 0; idx1 < dim; idx1++)//Normalize between 0 and 1
+	std::chrono::duration<double, std::milli> elapsed;
+	std::chrono::high_resolution_clock::time_point t;
+
+	if (mode & DR_MODE) {
+		std::cout << "=========================================\n";
+		std::cout << "DR Mode\n";
+		copy_data(data, data_mat, obs, dim); // later: should improve code without copy(s)
+
+		if(TAPKEE_NUM_DR==11)
 		{
-			max1 = data[idx1];
-			min1 = data[idx1];
-			for (idx2 = 1; idx2 < obs; idx2++)
-			{
-				max1 = max(data[idx2*dim + idx1], max1);
-				min1 = min(data[idx2*dim + idx1], min1);
-			}
-			for (idx2 = 0; idx2 < obs; idx2++)
-				data[idx2*dim + idx1] = ((data[idx2*dim + idx1] - min1) / (max1 - min1));
+				t = std::chrono::high_resolution_clock::now();
+
+			tapkee::TapkeeOutput output1 = tapkee::initialize()
+				.withParameters((tapkee::method = (static_cast<tapkee::DimensionReductionMethod>(TAPKEE_NUM_DR)), //tapkee::method = tapkee::tDistributedStochasticNeighborEmbedding
+					tapkee::num_neighbors = TAPKEE_NUM_NEIGHBORS,	//default=10
+					//tapkee::sne_perplexity = tsne_perplexity,		//default=30
+					tapkee::target_dimension = aim_dim, tapkee::landmark_ratio = LANDMARK_RATIO))			//.withDistance(distance)
+				.embedUsing(data_mat.transpose());					//.withFeatures(data_mat);
+
+			elapsed = std::chrono::high_resolution_clock::now() - t;
+			in_file << "Wall-clock time of vanilla DR: " << elapsed.count() << endl;
+			std::cout << "    " << "DR: " << elapsed.count() << " ms    " << endl;
+			fullpath = cur_path + file_str_dr;
+			write_file(output1.embedding, fullpath.c_str(), obs, aim_dim);
 		}
-		in_file << endl;
-
-		std::chrono::duration<double, std::milli> elapsed;
-		std::chrono::high_resolution_clock::time_point t;
-
-		if (mode & DR_MODE) {
-			std::cout << "=========================================\n";
-			std::cout << "DR Mode\n";
-			copy_data(data, data_mat, obs, dim); // later: should improve code without copy(s)
-
+		else
+		{
 			t = std::chrono::high_resolution_clock::now();
 
 			tapkee::TapkeeOutput output1 = tapkee::initialize()
@@ -152,31 +172,51 @@ int main(int argc, char *argv[])
 				.embedUsing(data_mat.transpose());					//.withFeatures(data_mat);
 
 			elapsed = std::chrono::high_resolution_clock::now() - t;
-
 			in_file << "Wall-clock time of vanilla DR: " << elapsed.count() << endl;
 			std::cout << "    " << "DR: " << elapsed.count() << " ms    " << endl;
 			fullpath = cur_path + file_str_dr;
 			write_file(output1.embedding, fullpath.c_str(), obs, aim_dim);
 		}
+	}
 
-		if (mode & SDR_MODE) {
-			std::cout << "=========================================\n";
-			std::cout << "SDR Mode\n";
-			///lgc step
-			fullpath = cur_path + file_str_lgc;
+	if (mode & SDR_MODE) {
+		std::cout << "=========================================\n";
+		std::cout << "SDR Mode\n";
+		///lgc step
+		fullpath = cur_path + file_str_lgc;
 
+		t = std::chrono::high_resolution_clock::now();
+
+		if (LEARNING_RATE)
+			sharpening_for_dr(data, obs, dim, LEARNING_RATE);
+		else
+			std::cout << "    Check learning rate parameter for LGC." << endl;
+		elapsed = std::chrono::high_resolution_clock::now() - t;
+
+		in_file << "Wall-clock time of LGC step of SDR: " << elapsed.count() << endl;
+		std::cout << "    LGC step" << ": " << elapsed.count() << " ms" << endl;
+		write_file(data, fullpath.c_str(), obs, dim);
+		///dr step
+		copy_data(data, data_mat, obs, dim);
+
+		if(TAPKEE_NUM_DR==11)
+		{
 			t = std::chrono::high_resolution_clock::now();
-
-			if (LEARNING_RATE)
-				sharpening_for_dr(data, obs, dim, LEARNING_RATE);
-			else
-				std::cout << "    Check learning rate parameter for LGC." << endl;
-
-			in_file << "Wall-clock time of LGC step of SDR: " << elapsed.count() << endl;
-			std::cout << "    LGC step" << ": " << elapsed.count() << " ms" << endl;
-			write_file(data, fullpath.c_str(), obs, dim);
-			///dr step
-			copy_data(data, data_mat, obs, dim);
+			tapkee::TapkeeOutput output2 = tapkee::initialize()
+				.withParameters((tapkee::method = (static_cast<tapkee::DimensionReductionMethod>(TAPKEE_NUM_DR)), //tapkee::method = tapkee::tDistributedStochasticNeighborEmbedding
+					tapkee::num_neighbors = TAPKEE_NUM_NEIGHBORS,	//default=10
+					//tapkee::sne_perplexity = tsne_perplexity,		//default=30
+					tapkee::target_dimension = aim_dim, tapkee::landmark_ratio = LANDMARK_RATIO))			//.withDistance(distance)
+				.embedUsing(data_mat.transpose());					//.withFeatures(data_mat);
+			elapsed = std::chrono::high_resolution_clock::now() - t;
+			in_file << "Wall-clock time of DR step of SDR: " << elapsed.count() << endl;
+			std::cout << "    DR step: " << elapsed.count() << " ms" << endl;
+			fullpath = cur_path + file_str_s_dr;
+			write_file(output2.embedding, fullpath.c_str(), obs, aim_dim);
+		}
+		else
+		{
+			t = std::chrono::high_resolution_clock::now();
 
 			tapkee::TapkeeOutput output2 = tapkee::initialize()
 				.withParameters((tapkee::method = (static_cast<tapkee::DimensionReductionMethod>(TAPKEE_NUM_DR)), //tapkee::method = tapkee::tDistributedStochasticNeighborEmbedding
@@ -186,16 +226,15 @@ int main(int argc, char *argv[])
 				.embedUsing(data_mat.transpose());					//.withFeatures(data_mat);
 
 			elapsed = std::chrono::high_resolution_clock::now() - t;
-
 			in_file << "Wall-clock time of DR step of SDR: " << elapsed.count() << endl;
 			std::cout << "    DR step: " << elapsed.count() << " ms" << endl;
 			fullpath = cur_path + file_str_s_dr;
 			write_file(output2.embedding, fullpath.c_str(), obs, aim_dim);
 		}
-			in_file.close();
-			if (obs > 0 && dim > 1)
-				delete[] data;
 	}
+		in_file.close();
+		if (obs > 0 && dim > 1)
+			delete[] data;
 
 	return 0;
 }
