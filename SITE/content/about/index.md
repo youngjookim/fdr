@@ -3,7 +3,7 @@ date = "2021-01-01T21:05:33+05:30"
 title = "About "
 +++
 
-## All contents from https://youngjookim.github.io/sdr/ were submitted to IEEE TVCG in January.
+## All contents from https://youngjookim.github.io/sdr/ were submitted to and accepted by the Information Visualization journal.
 
 ## High-dimensional Sharpened Dimensionality Reduction (HD-SDR)
 High-dimensional Sharpened Dimensionality Reduction (HD-SDR) sharpens the original high-dimensional data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
