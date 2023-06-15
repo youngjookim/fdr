@@ -6,11 +6,7 @@
     <description>Recent content on High-Dimensional Sharpened Dimensionality Reduction</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://youngjookim.github.io/sdr/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://youngjookim.github.io/sdr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Comparison of DR and HD-SDR on HAR data with dimensions pre-selected using PCA</title>
       <link>https://youngjookim.github.io/sdr/experiments/13/</link>
@@ -89,7 +85,7 @@
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/experiments/10/</guid>
-      <description>(a) SLMDS projection of the GALAH DR2 sample, where clusters are visually labeled by one of us (SCT). The labeled clusters in SLMDS help domain experts to further analyze the data as follows: (b) Tinsley diagram for the GALAH DR2 sample, showing the abundance of magnesium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars. This diagram suggests to our domain-expert (SCT) that stars in Class 1 belong to the Milky Way&amp;rsquo;s thin disk&#39;&#39;, while those in Classes 2 and 4 appear to belong to the Milky Way&#39;s metal-rich thick disk&amp;rsquo;&amp;rsquo; and metal-poor thick disk&#39;&#39;, respectively, and stars in Class 3 appear to belong to the Milky Way&#39;s stellar halo&amp;rsquo;&amp;rsquo;.</description>
+      <description>(a) SLMDS projection of the GALAH DR2 sample, where clusters are visually labeled by one of us (SCT). The labeled clusters in SLMDS help domain experts to further analyze the data as follows: (b) Tinsley diagram for the GALAH DR2 sample, showing the abundance of magnesium as a function of the iron abundance, used to interpret the origin and location of Milky Way stars. This diagram suggests to our domain-expert (SCT) that stars in Class 1 belong to the Milky Way&amp;rsquo;s thin disk&#39;&#39;, while those in Classes 2 and 4 appear to belong to the Milky Way&#39;s metal-rich thick disk&#39;&#39; and metal-poor thick disk&#39;&#39;, respectively, and stars in Class 3 appear to belong to the Milky Way&#39;s stellar halo&#39;&#39;.</description>
     </item>
     
     <item>
@@ -143,13 +139,12 @@
       <pubDate>Fri, 01 Jan 2021 21:05:33 +0530</pubDate>
       
       <guid>https://youngjookim.github.io/sdr/about/</guid>
-      <description>All contents from https://youngjookim.github.io/sdr/ were submitted to IEEE TVCG in January. High-dimensional Sharpened Dimensionality Reduction (HD-SDR) High-dimensional Sharpened Dimensionality Reduction (HD-SDR) sharpens the original high-dimensional data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
+      <description>All contents from https://youngjookim.github.io/sdr/ were submitted to and accepted by the Information Visualization journal. High-dimensional Sharpened Dimensionality Reduction (HD-SDR) High-dimensional Sharpened Dimensionality Reduction (HD-SDR) sharpens the original high-dimensional data before dimensionality reduction to create visually segregrated sample clusters, which is targeted for user-guided labeling.
 Setup Code is written in C++ and is available here.
 https://github.com/youngjookim/sdr
 To get the code running please include the following:
 a. Nanoflann header file
-b. Eigen 3.3.3
-c. Tapkee dimension reduction library</description>
+b. Eigen 3.</description>
     </item>
     
     <item>
